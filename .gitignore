@@ -1,0 +1,9 @@
+node_modules/
+data/weights/
+.idea/
+
+data/urls.txt
+
+.env
+debug.log
+ages.txt

@@ -1,0 +1,20 @@
+{
+  "name": "iqos-age",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "author": "Marek Lukas",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^1.1.2",
+    "axios": "^0.18.0",
+    "canvas": "^2.5.0",
+    "csv-parse": "^4.4.1",
+    "dotenv": "^8.0.0",
+    "face-api.js": "^0.20.0"
+  },
+  "devDependencies": {}
+}
