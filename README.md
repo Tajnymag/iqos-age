@@ -1,7 +1,7 @@
 # IQOS Age Study
 
-# How to run this
-***
+## How to run this
+
 ```bash
 # clone this repository
 git clone https://github.com/Tajnymag/iqos-age
