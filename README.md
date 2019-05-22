@@ -4,10 +4,10 @@
 ***
 ```bash
 # clone this repository
-git clone https://github.com/tajnymag/
+git clone https://github.com/Tajnymag/iqos-age
 
 # move to the downloaded repository
-cd something
+cd iqos-age
 
 # install dependencies
 yarn install # or npm install
