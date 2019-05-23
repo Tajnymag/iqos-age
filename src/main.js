@@ -1,7 +1,6 @@
 require('dotenv').config();
-const {processImageUrlAzure, processImageUrlLocal} = require('./face-api');
+const {processImageUrlAzure} = require('./face-api');
 const {average, median} = require('./data');
-const {loadInputStream} = require('./util');
 const parse = require('csv-parse');
 const fs = require('fs');
 
@@ -43,19 +42,12 @@ async function processUser(user) {
     }
 
     if (counter.line % 100 === 0) {
+        console.info('---------------------------------');
         console.info((counter.line + 1) + ' of users processed so far...');
         console.info(counter.invalid + ' of users have invalid profile pic...');
         console.info(counter.notAdults + ' of users are under 18 years old...');
     }
 }
-
-/**
- const rl = loadInputStream('/','/home/marek/Projekty/iqos-age/data/urls.txt');
- rl.on('line', async (line) => {
-    const fakeUser = {profile_pic_url_hd: line};
-    await processUser(fakeUser);
-});
- **/
 
 parser.on('readable', async () => {
     while (true) {
